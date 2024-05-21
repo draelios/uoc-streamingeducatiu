@@ -3,17 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Page</title>
+    <title>Educational Video Platform Prototype</title>
     <link rel="stylesheet" href="css/styles.css">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>    
 <body>
     <header>
-        <h1>Welcome to our Educational Streaming Service!</h1>
+        <h1>Educational Video Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="#search-videos">Search Videos</a></li>
+                <li><a href="#create-playlist">Create Playlist</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <input type="text" id="searchBar" placeholder="Search for videos...">
-        <!-- Display 5 videos here -->
+        <section id="search-videos">
+            <h2>Search Videos</h2>
+            <form id="search-form">
+                <input type="text" id="search-keyword" placeholder="Enter keyword...">
+                <button type="submit">Search</button>
+                <div id="search-filters">
+                    <label for="filter-level">Level:</label>
+                    <select id="filter-level">
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                    <label for="filter-rating">Rating:</label>
+                    <select id="filter-rating">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                    <label for="filter-language">Language:</label>
+                    <select id="filter-language">
+                        <option value="english">English</option>
+                        <option value="spanish">Spanish</option>
+                        <option value="french">French</option>
+                    </select>
+                </div>
+            </form>
+            <div id="search-results"></div>
+        </section>
+        <section id="create-playlist">
+            <h2>Create Playlist</h2>
+            <form id="playlist-form">
+                <input type="text" id="playlist-name" placeholder="Playlist name...">
+                <button type="button" id="add-video">Add Video</button>
+            </form>
+            <div id="playlist-videos"></div>
+        </section>
     </main>
-    <script src="js/script.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
