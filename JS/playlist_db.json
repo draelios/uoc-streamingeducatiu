@@ -1,0 +1,8 @@
+[
+    {
+        "id": 3,
+        "title": "Mixed Topics",
+        "description": "This playlist covers a variety of topics, from tech to hobbies.",
+        "videos": ["v5", "v6", "v7", "v8", "v9", "v10", "v11", "v12", "v13", "v14", "v15"]
+    }
+]
