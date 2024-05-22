@@ -85,3 +85,11 @@ button:hover {
     font-weight: bold;
     color: #003b5c;
 }
+
+
+.search-bar {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
