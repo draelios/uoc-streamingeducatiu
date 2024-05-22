@@ -8,46 +8,12 @@
 </head>    
 <body>
     <h1> ACANTERO Educational Video Platform</h1>
-    <main>
-        <section id="search-videos">
-            <h2>Search Videos</h2>
-            <form id="search-form">
-                <input type="text" class="search-bar" id="search-keyword" placeholder="Enter keyword...">
-                <button type="submit">Search</button>
-                <div id="search-filters">
-                    <label for="filter-level">Level:</label>
-                    <select id="filter-level">
-                        <option value="beginner">Beginner</option>
-                        <option value="intermediate">Intermediate</option>
-                        <option value="advanced">Advanced</option>
-                    </select>
-                    <label for="filter-rating">Rating:</label>
-                    <select id="filter-rating">
-                        <option value="1">1 Star</option>
-                        <option value="2">2 Stars</option>
-                        <option value="3">3 Stars</option>
-                        <option value="4">4 Stars</option>
-                        <option value="5">5 Stars</option>
-                    </select>
-                    <label for="filter-language">Language:</label>
-                    <select id="filter-language">
-                        <option value="english">English</option>
-                        <option value="spanish">Spanish</option>
-                        <option value="french">French</option>
-                    </select>
-                </div>
-            </form>
-            <div id="search-results"></div>
-        </section>
-        <section id="create-playlist">
-            <h2>Create Playlist</h2>
-            <form id="playlist-form">
-                <input type="text" id="playlist-name" placeholder="Playlist name...">
-                <button type="button" id="add-video">Add Video</button>
-            </form>
-            <div id="playlist-videos"></div>
-        </section>
-    </main>
-    <script src="js/scripts.js"></script>
+    <form action="search.html">
+        <input type="submit" value="Search" />
+    </form>
+    <form action="playlist.html">
+        <input type="submit" value="Playlist" />
+    </form>
+    <script src="scripts.js"></script>
 </body>
 </html>
