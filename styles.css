@@ -58,6 +58,10 @@ h2 {
 }
 
 .video {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
     margin: 10px;
     width: 30%;
     border: 1px solid #ccc;
@@ -66,6 +70,7 @@ h2 {
     height: 20vh;
     text-align: center;
 }
+
 
 .videoReproduction {
     width: 100%;
