@@ -99,7 +99,7 @@ h2 {
 form {
     margin: 20px;
     display: flex;
-    justify-content: space-evenly
+    justify-content: space-around
 }
 
 input[type="text"], select {
@@ -119,10 +119,22 @@ button {
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
+    margin: 5px;
+}
+
+button a {
+    color: #fff;
+    text-decoration: none;
 }
 
 button:hover {
     background-color: #ccc;
+}
+
+#serach-videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 #search-results, #playlist-videos {
