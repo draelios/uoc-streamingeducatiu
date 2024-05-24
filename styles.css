@@ -66,8 +66,9 @@ h2 {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    height: 25vh;
+    height: 65vh;
     text-align: center;
+    margin: 5% 0 0 0;
 }
 
 
