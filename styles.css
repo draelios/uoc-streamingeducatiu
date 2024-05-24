@@ -5,39 +5,66 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     display: flex;
+    flex-direction: row;
+    align-items: stretch;
 }
 
-.sidebar {
-    width: 200px; /* Set a width if you like */
-    height: 100vh; /* Set the height to full screen height */
-    position: fixed; /* Position the element */
-    left: 0; /* Align the element to the left */
-    top: 0; /* Align the element to the top */
-    background-color: #eee; /* Grey background color */
-    color: black; /* Black text color */
-    display: block; /* Make the links appear below each other */
-    text-decoration: none; /* Remove underline from links */
+.sideBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    min-width: 200px;
+    border-right: 1px solid #D7DBDD;
+    background-color: #FCFDFD;
+    padding: 1% 0 0 0;
 }
 
 .vertical-menu a {
     background-color: #eee; /* Grey background color */
     color: black; /* Black text color */
     display: block; /* Make the links appear below each other */
-    padding: 12px; /* Add some padding */
+    padding: 0 10% 10% 10%; /* Add some padding */
     text-decoration: none; /* Remove underline from links */
-    width: 88%; /* Occupy all the width of the parent element */
+    width: 80%; /* Occupy all the width of the parent element */
     margin-left: 0; /* Remove the left margin */
 }
-
-
-
 
 h1 {
     background-color: #003b5c;
     color: #fff;
-    padding: 15px 0;
+    padding: 15px;
+    margin: 0;
+    text-align: center;
+    width: 100;
+}
+
+h2 {
+    color: #003b5c;
     text-align: center;
 }
+
+.videoList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.video {
+    margin: 10px;
+    width: 30%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    height: 25vh;
+    text-align: center;
+}
+
+
+
+
+
+
 .search-bar {
     display: block;
     width: 50%;
