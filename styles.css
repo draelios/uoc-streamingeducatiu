@@ -9,25 +9,32 @@ body {
     align-items: stretch;
 }
 
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .sideBar {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: 100vh;
-    min-width: 200px;
-    border-right: 1px solid #D7DBDD;
+    min-width: 300px;
+    border-right: 2px solid #D7DBDD;
     background-color: #FCFDFD;
     padding: 1% 0 0 0;
+    text-align: center;
 }
 
 .vertical-menu a {
     background-color: #eee; /* Grey background color */
     color: black; /* Black text color */
     display: block; /* Make the links appear below each other */
-    padding: 0 10% 10% 10%; /* Add some padding */
+    padding: 5% 10% 10% 10%; /* Add some padding */
     text-decoration: none; /* Remove underline from links */
     width: 80%; /* Occupy all the width of the parent element */
     margin-left: 0; /* Remove the left margin */
+    font-size: 32px;
 }
 
 h1 {
@@ -56,7 +63,7 @@ h2 {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    height: 25vh;
+    height: 20vh;
     text-align: center;
 }
 
@@ -71,58 +78,28 @@ h2 {
     margin: 5% 0 0 0;
 }
 
-
-
-
+.vertical-menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+}
+    
+.vertical-menu a.active {
+    background-color: #003b5c; /* Add a green color to the "active/current" link */
+    color: white;
+}
 
 
 .search-bar {
-    display: block;
+    flex-grow: 9999;
     width: 50%;
     margin: 0 auto;
     border-radius: 10px;
-}
-
-
-
-
-.vertical-menu a:hover {
-background-color: #ccc; /* Dark grey background on mouse-over */
-}
-
-.vertical-menu a.active {
-background-color: #003b5c; /* Add a green color to the "active/current" link */
-color: white;
-}
-
-
-
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-main {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    
 }
 
 form {
-    margin-bottom: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-evenly
 }
 
 input[type="text"], select {
@@ -134,10 +111,18 @@ input[type="text"], select {
     width: 200px;
 }
 
-
+button {
+    padding: 10px 20px;
+    background-color: #003b5c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
 
 button:hover {
-    background-color: #005f6b;
+    background-color: #ccc;
 }
 
 #search-results, #playlist-videos {
@@ -157,12 +142,4 @@ button:hover {
     margin-right: 10px;
     font-weight: bold;
     color: #003b5c;
-}
-
-
-.search-bar {
-    display: block;
-    width: 50%;
-    margin: 0 auto;
-    border-radius: 10px;
 }
