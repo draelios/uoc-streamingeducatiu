@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Educational Video Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>    
+<body>
+    <aside class="sideBar">
+        <div class="vertical-menu">
+            <a href="index.html">Home</a>
+            <a href="search.html" class="active" >Search</a>
+            <a href="playlist.html">Playlists</a>
+        </div>
+    </aside>
+
+    
+    <main>
+        <h1> ACANTERO Educational Video Platform</h1>
+        <section id="search-videos">
+            <h2>Search Videos</h2>
+            <form id="search-form">
+                <input type="text" class="search-bar" id="search-keyword" placeholder="Enter keyword...">
+                <button type="submit">Search</button>
+            </form>
+            <div id="search-filters">
+                <label for="filter-level">Level:</label>
+                <select id="filter-level">
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+                <label for="filter-rating">Rating:</label>
+                <select id="filter-rating">
+                    <option value="1">1 Star</option>
+                    <option value="2">2 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="5">5 Stars</option>
+                </select>
+                <label for="filter-language">Language:</label>
+                <select id="filter-language">
+                    <option value="english">English</option>
+                    <option value="spanish">Spanish</option>
+                    <option value="french">French</option>
+                </select>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

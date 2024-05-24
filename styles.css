@@ -11,7 +11,7 @@ body {
 
 main {
     padding: 20px;
-    max-width: 1200px;
+    min-width: 1200px;
     margin: 0 auto;
 }
 
@@ -131,11 +131,6 @@ button:hover {
     background-color: #ccc;
 }
 
-#serach-videos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
 
 #search-results, #playlist-videos {
     background-color: #fff;
