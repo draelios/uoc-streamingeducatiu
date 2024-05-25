@@ -155,3 +155,42 @@ button:hover {
     font-weight: bold;
     color: #003b5c;
 }
+
+#playlist-form {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.playlist-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.playlist {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    height: 10vh;
+}
+
+.playlist h3 {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    color: #003b5c;
+    min-width: 500px;
+}
+
+.icon {
+    object-fit: contain;
+    width: 35%;
+    height: 35%;
+    margin-top: 2%;
+}
