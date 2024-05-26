@@ -5,5 +5,5 @@ document.getElementById("searchButton").addEventListener("click", (e) => {
     } else {
         window.location = "search_results.html";
     }
-}
-);
+});
+
